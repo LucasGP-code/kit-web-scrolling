@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SAH — Servicio Austral de Hemodinamia | Río Gallegos, Santa Cruz</title>
+<meta name="description" content="Cardiología intervencionista y hemodinamia en Río Gallegos, Santa Cruz. Servicio a cargo de la Dra. Corina Biagioni (MP 3093). Información para pacientes y médicos derivadores.">
+<link rel="canonical" href="https://sah.com.ar/">
+<link rel="alternate" hreflang="es" href="https://sah.com.ar/">
+<link rel="alternate" hreflang="en" href="https://sah.com.ar/en/index.html">
+<link rel="alternate" hreflang="x-default" href="https://sah.com.ar/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="SAH — Servicio Austral de Hemodinamia">
+<meta property="og:title" content="SAH — Servicio Austral de Hemodinamia">
+<meta property="og:description" content="Cardiología intervencionista y hemodinamia en Río Gallegos, Santa Cruz. Dra. Corina Biagioni, MP 3093.">
+<meta property="og:image" content="/assets/Logo SAH.png">
+<meta property="og:locale" content="es_AR">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/kit-web-scrolling/assets/css/style.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MedicalOrganization",
+  "name": "SAH — Servicio Austral de Hemodinamia",
+  "medicalSpecialty": "Cardiology",
+  "url": "https://sah.com.ar/",
+  "logo": "https://sah.com.ar/assets/Logo SAH.png",
+  "areaServed": {
+    "@type": "City",
+    "name": "Río Gallegos"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Río Gallegos",
+    "addressRegion": "Santa Cruz",
+    "addressCountry": "AR"
+  }
+}
+</script>
+
+<style>
+  /* ── Estilos específicos de Inicio ── */
+  #inicio {
+    min-height: 92vh; display: flex; align-items: center;
+    position: relative; overflow: hidden;
+    background: linear-gradient(160deg, var(--navy-2) 0%, var(--navy) 55%, var(--navy-3) 100%);
+    padding-top: 64px;
+  }
+  .hero-bg-img { position: absolute; inset: 0; background: url('/assets/banner-stent-gde.jpg') center/cover no-repeat; opacity: .10; mix-blend-mode: luminosity; }
+  .hero-grid { position: absolute; inset: 0; background-image: linear-gradient(rgba(255,255,255,.04) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.04) 1px, transparent 1px); background-size: 56px 56px; }
+  .hero-inner { position: relative; z-index: 2; max-width: var(--maxw); margin: 0 auto; padding: 4rem 1.5rem;
+    display: flex; flex-direction: column; align-items: center; text-align: center; }
+  .hero-mark { height: 76px; width: auto; margin-bottom: 1.4rem; opacity: .92; }
+  .hero-wordmark { font-family: 'Cormorant Garamond', serif; font-weight: 600; letter-spacing: .16em;
+    font-size: clamp(1.9rem, 3.6vw, 2.6rem); color: #fff; margin-bottom: .3rem; }
+  .hero-wordmark-full { display: block; font-family: 'Inter', sans-serif; font-weight: 500; letter-spacing: .08em;
+    text-transform: uppercase; font-size: .68rem; color: rgba(255,255,255,.55); margin-top: .5rem; }
+  .hero-flanked { display: inline-flex; align-items: center; gap: 1rem; margin: 1.6rem 0 1.8rem;
+    color: var(--gold); text-transform: uppercase; letter-spacing: .15em; font-size: .76rem; font-weight: 700; }
+  .hero-flanked span { width: 40px; height: 1px; background: rgba(201,169,110,.45); }
+  .hero-tagline { font-family: 'Cormorant Garamond', serif; font-weight: 500; letter-spacing: -.01em;
+    font-size: clamp(1.7rem, 3.4vw, 2.5rem); color: #fff; line-height: 1.3; max-width: 22ch; margin-bottom: 1.4rem; }
+  .hero-tagline em { font-style: italic; font-weight: 600; color: var(--gold-600); }
+  .hero-sub { font-size: 1.02rem; color: rgba(255,255,255,.72); line-height: 1.75; max-width: 52ch; margin: 0 auto 2.2rem; }
+  .hero-actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; margin-bottom: 2.6rem; }
+  .hero-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 1.6rem; }
+  .hero-links a { color: rgba(255,255,255,.78); text-decoration: none; font-size: .88rem; font-weight: 600; display: inline-flex; align-items: center; gap: .4rem; border-bottom: 1px solid rgba(255,255,255,.25); padding-bottom: .15rem; }
+  .hero-links a:hover { color: #fff; border-color: #fff; }
+
+  .quote-strip { background: var(--bg-soft); padding: 2.4rem 0; text-align: center; }
+  .quote-strip p { font-family: 'Cormorant Garamond', serif; font-weight: 700; font-size: 1.15rem; color: var(--petrol-700); max-width: 42ch; margin: 0 auto; }
+
+  .split { display: grid; grid-template-columns: 1fr 1fr; gap: 3.5rem; align-items: center; }
+  .split img { border-radius: var(--radius-l); box-shadow: var(--shadow-m); width: 100%; height: 320px; object-fit: cover; }
+  @media (max-width: 860px) { .split { grid-template-columns: 1fr; } }
+
+  .diff-list { display: grid; gap: 1rem; margin-top: 1rem; }
+  .diff-item { display: flex; gap: .9rem; align-items: flex-start; }
+  .diff-item .dot { width: 30px; height: 30px; flex-shrink: 0; border-radius: 50%; background: var(--teal-100); color: var(--teal-600); display: flex; align-items: center; justify-content: center; }
+  .diff-item h3 { font-size: .96rem; color: var(--petrol-700); margin-bottom: .2rem; }
+  .diff-item p { font-size: .86rem; color: var(--ink-soft); }
+
+  .dra-photo-placeholder {
+    aspect-ratio: 4/5; border-radius: var(--radius-l); background: var(--petrol-100);
+    display: flex; flex-direction: column; align-items: center; justify-content: center; gap: .8rem;
+    color: var(--petrol-500); text-align: center; padding: 2rem; border: 1.5px dashed var(--petrol-500);
+  }
+
+  .public-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 1.4rem; }
+  @media (max-width: 720px) { .public-cards { grid-template-columns: 1fr; } }
+
+  .blog-teaser-card { background: var(--navy-3); border: 1px solid var(--border); border-radius: var(--radius-m); padding: 2rem; text-align: center; }
+
+  .cta-final { background: linear-gradient(140deg, var(--navy-2), var(--navy)); color: #fff; border-radius: var(--radius-l); padding: 3.5rem 2.5rem; text-align: center; }
+  .cta-final .sec-title { color: #fff; }
+
+  /* ── Bloque de confianza ── */
+  .trust-block { display: grid; grid-template-columns: repeat(3, 1fr); }
+  .trust-item { position: relative; padding: 3rem 2.2rem; min-height: 250px; display: flex; flex-direction: column; justify-content: flex-end; color: #fff; }
+  .trust-item.trust-plain { background: var(--navy-2); }
+  .trust-num { font-family: 'Cormorant Garamond', serif; font-size: 2rem; color: var(--gold); margin-bottom: .5rem; }
+  .trust-title { font-family: 'Cormorant Garamond', serif; font-weight: 600; font-size: 1.25rem; margin-bottom: .6rem; }
+  .trust-text { font-size: .86rem; color: rgba(255,255,255,.78); line-height: 1.65; max-width: 32ch; }
+  @media (max-width: 860px) { .trust-block { grid-template-columns: 1fr; } }
+
+  /* ── Grilla de servicios ── */
+  .svc-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.2rem; }
+  .svc-card { position: relative; border-radius: var(--radius-m); overflow: hidden; min-height: 250px; display: flex; flex-direction: column; justify-content: flex-end; text-decoration: none; border: 1px solid var(--border); }
+  .svc-card.svc-plain { background: var(--navy-3); border-style: dashed; border-color: rgba(201,169,110,.35); justify-content: center; align-items: center; text-align: center; padding: 1.5rem; }
+  .svc-bg { position: absolute; inset: 0; background-size: cover; background-position: center; transition: transform .5s ease; }
+  .svc-card:hover .svc-bg { transform: scale(1.08); }
+  .svc-overlay { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(6,14,31,.1) 0%, rgba(6,14,31,.94) 82%); }
+  .svc-num { position: relative; z-index: 2; font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; color: var(--gold); padding: 1.1rem 1.3rem 0; }
+  .svc-content { position: relative; z-index: 2; padding: .5rem 1.3rem 1.4rem; }
+  .svc-name { font-family: 'Cormorant Garamond', serif; font-weight: 600; font-size: 1.1rem; color: #fff; margin-bottom: .5rem; }
+  .svc-desc { font-size: .8rem; color: rgba(255,255,255,.75); line-height: 1.6; margin-bottom: .6rem; }
+  .svc-tag { font-size: .7rem; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; color: var(--gold); }
+  @media (max-width: 1024px) { .svc-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 560px) { .svc-grid { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body data-nav="inicio" data-lang="es" data-alt-href="/kit-web-scrolling/en/index.html">
+<a href="#main" class="skip-link">Saltar al contenido principal</a>
+<div id="site-header"></div>
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section id="inicio">
+    <div class="hero-bg-img" aria-hidden="true"></div>
+    <div class="hero-grid" aria-hidden="true"></div>
+    <div class="hero-inner">
+      <img src="/kit-web-scrolling/assets/Logo%20SAH.png" alt="" class="hero-mark" aria-hidden="true">
+      <h1 class="hero-wordmark">SAH<span class="hero-wordmark-full">Servicio Austral de Hemodinamia</span></h1>
+      <div class="hero-flanked"><span aria-hidden="true"></span>Río Gallegos · Santa Cruz<span aria-hidden="true"></span></div>
+      <p class="hero-tagline">Experiencia, <em>precisión</em> y <em>confianza</em> en cada procedimiento.</p>
+      <p class="hero-sub">Cardiología intervencionista y hemodinamia en Río Gallegos, con respaldo médico de la Dra. Corina Biagioni (MP 3093).</p>
+      <div class="hero-actions">
+        <a href="/kit-web-scrolling/contacto.html" class="btn btn-accent">Solicitar información</a>
+        <a href="/kit-web-scrolling/pacientes/derivaciones-medicas.html" class="btn btn-ghost">Realizar una derivación</a>
+      </div>
+      <div class="hero-links">
+        <a href="/kit-web-scrolling/pacientes/preparacion-para-estudios.html">Preparación para estudios →</a>
+        <a href="/kit-web-scrolling/hemodinamia/index.html">Conocer los procedimientos →</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="quote-strip reveal">
+    <div class="container">
+      <p>"Ciencia con sensibilidad humana."</p>
+    </div>
+  </div>
+
+  <!-- ============ BLOQUE DE CONFIANZA ============ -->
+  <div class="trust-block reveal">
+    <div class="trust-item" style="background: linear-gradient(rgba(6,14,31,.55), rgba(6,14,31,.9)), url('/assets/img_06.jpg') center/cover no-repeat;">
+      <div class="trust-num">01</div>
+      <div class="trust-title">Tecnología especializada</div>
+      <div class="trust-text">Equipamiento dedicado al diagnóstico y tratamiento cardiovascular por cateterismo, en un entorno preparado para la seguridad del paciente.</div>
+    </div>
+    <div class="trust-item" style="background: linear-gradient(rgba(6,14,31,.55), rgba(6,14,31,.9)), url('/assets/enfermera-que-consuela-un-paciente-en-sala-de-hospital-131708867.webp') center/cover no-repeat;">
+      <div class="trust-num">02</div>
+      <div class="trust-title">Atención cercana y humana</div>
+      <div class="trust-text">Explicamos cada procedimiento en lenguaje claro, para que el paciente y su familia sepan qué esperar en cada etapa.</div>
+    </div>
+    <div class="trust-item trust-plain">
+      <div class="trust-num">03</div>
+      <div class="trust-title">Coordinación con médicos derivadores</div>
+      <div class="trust-text">Un circuito de derivación ordenado, con devolución al profesional que deriva cada caso.</div>
+    </div>
+  </div>
+
+  <!-- ============ QUÉ ES SAH ============ -->
+  <section>
+    <div class="container split">
+      <div class="reveal">
+        <span class="eyebrow">Quiénes somos</span>
+        <h2 class="sec-title">Un servicio especializado en <em>cardiología intervencionista</em></h2>
+        <p class="sec-text">SAH — Servicio Austral de Hemodinamia es un servicio médico especializado en cardiología intervencionista y hemodinamia, con base en Río Gallegos, Santa Cruz. Funciona dentro de <span class="pending-tag">[DATO PENDIENTE: nombre de la institución/clínica anfitriona]</span>, donde se realizan los estudios y procedimientos, bajo la dirección médica de la Dra. Corina Biagioni.</p>
+        <p class="sec-text mt-1">Nuestro trabajo combina tecnología especializada para el diagnóstico y tratamiento de enfermedades cardiovasculares con un acompañamiento cercano al paciente y a su familia, y una coordinación directa con los médicos que derivan cada caso.</p>
+      </div>
+      <img src="/kit-web-scrolling/assets/banner-stent-gde.jpg" alt="Representación de un stent coronario, dispositivo utilizado en angioplastia" loading="lazy" />
+    </div>
+  </section>
+
+  <!-- ============ SERVICIOS ============ -->
+  <section class="section-soft">
+    <div class="container">
+      <div class="text-center reveal" style="max-width:640px;margin:0 auto 3rem;">
+        <span class="eyebrow" style="justify-content:center;">Procedimientos</span>
+        <h2 class="sec-title">Nuestros <em>servicios</em></h2>
+        <p class="sec-text" style="margin:0 auto;">Cada procedimiento se explica con claridad, para que el paciente comprenda qué se realiza, por qué y qué esperar. La información es parte del cuidado.</p>
+      </div>
+      <div class="svc-grid reveal">
+        <a href="/kit-web-scrolling/hemodinamia/cateterismo-cardiaco-diagnostico.html" class="svc-card">
+          <div class="svc-bg" style="background-image:url('/assets/photo_2023-04-11_09-21-31.jpg')"></div>
+          <div class="svc-overlay"></div>
+          <div class="svc-num">01</div>
+          <div class="svc-content">
+            <h3 class="svc-name">Cateterismo cardíaco diagnóstico</h3>
+            <p class="svc-desc">Evalúa el funcionamiento del corazón y los vasos sanguíneos mediante la introducción de un catéter hasta las cavidades cardíacas.</p>
+            <div class="svc-tag">Ver más →</div>
+          </div>
+        </a>
+        <a href="/kit-web-scrolling/hemodinamia/coronariografia.html" class="svc-card">
+          <div class="svc-bg" style="background-image:url('/assets/119v50n02-13117014fig09.jpg')"></div>
+          <div class="svc-overlay"></div>
+          <div class="svc-num">02</div>
+          <div class="svc-content">
+            <h3 class="svc-name">Coronariografía</h3>
+            <p class="svc-desc">Estudio por imágenes que permite visualizar las arterias coronarias mediante la inyección de contraste y el registro por rayos X.</p>
+            <div class="svc-tag">Ver más →</div>
+          </div>
+        </a>
+        <a href="/kit-web-scrolling/hemodinamia/angioplastia-coronaria.html" class="svc-card">
+          <div class="svc-bg" style="background-image:url('/assets/Coro-STEMI-PCI-1536x1386.jpg')"></div>
+          <div class="svc-overlay"></div>
+          <div class="svc-num">03</div>
+          <div class="svc-content">
+            <h3 class="svc-name">Angioplastia coronaria</h3>
+            <p class="svc-desc">Trata el estrechamiento u obstrucción de una arteria coronaria, con el objetivo de restablecer el flujo de sangre hacia el corazón.</p>
+            <div class="svc-tag">Ver más →</div>
+          </div>
+        </a>
+        <a href="/kit-web-scrolling/hemodinamia/colocacion-de-stents.html" class="svc-card">
+          <div class="svc-bg" style="background-image:url('/assets/lzemjat4.jpg')"></div>
+          <div class="svc-overlay"></div>
+          <div class="svc-num">04</div>
+          <div class="svc-content">
+            <h3 class="svc-name">Colocación de stents</h3>
+            <p class="svc-desc">Malla metálica expandible que se implanta en una arteria tratada por angioplastia para ayudar a mantenerla abierta.</p>
+            <div class="svc-tag">Ver más →</div>
+          </div>
+        </a>
+        <a href="/kit-web-scrolling/hemodinamia/estudios-diagnosticos-invasivos.html" class="svc-card">
+          <div class="svc-bg" style="background-image:url('/assets/cardiac-header.jpg')"></div>
+          <div class="svc-overlay"></div>
+          <div class="svc-num">05</div>
+          <div class="svc-content">
+            <h3 class="svc-name">Estudios diagnósticos invasivos</h3>
+            <p class="svc-desc">Otros estudios por cateterismo para evaluar en detalle el corazón y los vasos, cuando los estudios no invasivos no alcanzan.</p>
+            <div class="svc-tag">Ver más →</div>
+          </div>
+        </a>
+        <a href="/kit-web-scrolling/hemodinamia/tratamiento-intervencionista.html" class="svc-card">
+          <div class="svc-bg" style="background-image:url('/assets/img_06.jpg')"></div>
+          <div class="svc-overlay"></div>
+          <div class="svc-num">06</div>
+          <div class="svc-content">
+            <h3 class="svc-name">Tratamiento intervencionista</h3>
+            <p class="svc-desc">Agrupa distintos procedimientos terapéuticos por cateterismo para tratar enfermedades cardiovasculares sin cirugía a corazón abierto.</p>
+            <div class="svc-tag">Ver más →</div>
+          </div>
+        </a>
+        <a href="/kit-web-scrolling/cardio-medicina.html" class="svc-card">
+          <div class="svc-bg" style="background-image:url('/assets/banner-stent-gde.jpg')"></div>
+          <div class="svc-overlay"></div>
+          <div class="svc-num">07</div>
+          <div class="svc-content">
+            <h3 class="svc-name">Cardio Medicina</h3>
+            <p class="svc-desc">Evaluación cardiovascular, orientación previa a procedimientos, seguimiento médico y prevención de factores de riesgo.</p>
+            <div class="svc-tag">Ver más →</div>
+          </div>
+        </a>
+        <div class="svc-card svc-plain">
+          <div class="svc-num" style="padding:0;">08</div>
+          <h3 class="svc-name">Otros procedimientos</h3>
+          <p class="svc-desc"><span class="pending-tag">[DATO PENDIENTE]</span> — se suman a esta lista cuando estén confirmados por el equipo médico.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ DIFERENCIALES ============ -->
+  <section>
+    <div class="container split">
+      <img src="/kit-web-scrolling/assets/enfermera-que-consuela-un-paciente-en-sala-de-hospital-131708867.webp" alt="Acompañamiento profesional a un paciente" loading="lazy" style="order:2;" />
+      <div class="reveal" style="order:1;">
+        <span class="eyebrow">Nuestro enfoque</span>
+        <h2 class="sec-title">Precisión médica, <em>trato humano</em></h2>
+        <div class="diff-list">
+          <div class="diff-item">
+            <span class="dot">✓</span>
+            <div><h3>Especialización en hemodinamia</h3><p>Un equipo enfocado específicamente en el diagnóstico y tratamiento cardiovascular por cateterismo.</p></div>
+          </div>
+          <div class="diff-item">
+            <span class="dot">✓</span>
+            <div><h3>Información clara antes de cada estudio</h3><p>Explicamos cada procedimiento en lenguaje simple, para que el paciente y su familia sepan qué esperar.</p></div>
+          </div>
+          <div class="diff-item">
+            <span class="dot">✓</span>
+            <div><h3>Coordinación con médicos derivadores</h3><p>Un circuito de derivación ordenado, con devolución al profesional que deriva.</p></div>
+          </div>
+          <div class="diff-item">
+            <span class="dot">✓</span>
+            <div><h3>Referencia regional</h3><p>Atención especializada en cardiología intervencionista para pacientes de Río Gallegos y la Patagonia.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ DRA. CORINA BIAGIONI ============ -->
+  <section class="section-dark on-dark">
+    <div class="container split">
+      <div class="dra-photo-placeholder reveal">
+        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="8" r="4"/><path d="M4 21v-1a8 8 0 0 1 16 0v1"/></svg>
+        <span style="font-size:.82rem;font-weight:600;">[DATO PENDIENTE]<br>Fotografía profesional de la Dra. Biagioni</span>
+      </div>
+      <div class="reveal">
+        <span class="eyebrow on-dark">Referente médico</span>
+        <h2 class="sec-title">Dra. Corina Biagioni</h2>
+        <p class="sec-text" style="margin-bottom:.4rem;">Cardióloga Intervencionista · MP 3093</p>
+        <p class="sec-text">La Dra. Corina Biagioni está a cargo de la dirección médica de SAH — Servicio Austral de Hemodinamia, especializada en cardiología intervencionista. Cada consulta busca explicar con claridad el procedimiento indicado, para que el paciente y su familia comprendan cada paso del proceso.</p>
+        <a href="/kit-web-scrolling/dra-corina-biagioni.html" class="btn btn-ghost mt-2">Conocer su perfil profesional</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PARA PACIENTES / PARA MÉDICOS ============ -->
+  <section class="section-soft">
+    <div class="container">
+      <div class="public-cards">
+        <div class="card reveal">
+          <span class="eyebrow">Pacientes y familiares</span>
+          <h2 class="sec-title" style="font-size:1.5rem;">Información para vos</h2>
+          <p class="sec-text mb-2">Qué llevar, cómo prepararte antes de un estudio y respuestas a las preguntas más frecuentes.</p>
+          <div class="flex-row">
+            <a href="/kit-web-scrolling/pacientes/preparacion-para-estudios.html" class="btn btn-primary btn-sm">Prepararme para un estudio</a>
+            <a href="/kit-web-scrolling/pacientes/preguntas-frecuentes.html" class="btn btn-secondary btn-sm">Ver preguntas frecuentes</a>
+          </div>
+        </div>
+        <div class="card reveal">
+          <span class="eyebrow">Médicos derivadores</span>
+          <h2 class="sec-title" style="font-size:1.5rem;">Derivar un paciente</h2>
+          <p class="sec-text mb-2">El circuito de derivación explicado paso a paso, con un formulario dedicado para enviar la solicitud y la documentación.</p>
+          <div class="flex-row">
+            <a href="/kit-web-scrolling/pacientes/derivaciones-medicas.html" class="btn btn-primary btn-sm">Realizar una derivación</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ BLOG ============ -->
+  <section>
+    <div class="container">
+      <div class="text-center reveal" style="max-width:640px;margin:0 auto 2.5rem;">
+        <span class="eyebrow" style="justify-content:center;">Novedades</span>
+        <h2 class="sec-title">Últimos artículos</h2>
+      </div>
+      <div class="blog-teaser-card reveal">
+        <p class="sec-text" style="margin:0 auto 1rem;">Estamos preparando los primeros artículos sobre prevención cardiovascular, cuidados y novedades institucionales. Muy pronto vas a encontrarlos acá.</p>
+        <a href="/kit-web-scrolling/blog/index.html" class="card-link" style="justify-content:center;">Visitar el blog →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA FINAL ============ -->
+  <section class="section-soft">
+    <div class="container">
+      <div class="cta-final reveal">
+        <h2 class="sec-title">¿Tenés una consulta o necesitás derivar a un paciente?</h2>
+        <p class="sec-text" style="color:rgba(255,255,255,.75);margin:0 auto 1.8rem;">Escribinos y te ayudamos a resolver tu duda. Recordá que la gestión de turnos se coordina siempre con la clínica correspondiente.</p>
+        <div class="flex-row" style="justify-content:center;">
+          <a href="/kit-web-scrolling/contacto.html" class="btn btn-accent">Contactar a SAH</a>
+          <a href="/kit-web-scrolling/pacientes/derivaciones-medicas.html" class="btn btn-ghost">Realizar una derivación</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<div id="site-footer"></div>
+<script src="/kit-web-scrolling/assets/js/site.js" defer></script>
+</body>
+</html>
