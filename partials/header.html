@@ -1,0 +1,48 @@
+<header class="site-nav" id="site-nav">
+  <div class="nav-row">
+    <a href="/index.html" class="nav-logo" aria-label="SAH — Servicio Austral de Hemodinamia, ir al inicio">
+      <img src="/assets/Logo%20SAH.png" alt="Logotipo de SAH" />
+      <span>
+        <span class="nav-brand-name">SAH</span>
+        <span class="nav-brand-sub">Hemodinamia</span>
+      </span>
+    </a>
+
+    <nav aria-label="Navegación principal" class="nav-links">
+      <a href="/index.html" data-nav="inicio">Inicio</a>
+      <a href="/cardio-medicina.html" data-nav="cardio">Cardio Medicina</a>
+      <a href="/hemodinamia/index.html" data-nav="hemodinamia">Hemodinamia</a>
+      <a href="/dra-corina-biagioni.html" data-nav="dra">Dra. Biagioni</a>
+      <a href="/pacientes/index.html" data-nav="pacientes">Pacientes</a>
+      <a href="/blog/index.html" data-nav="blog">Blog</a>
+      <a href="/contacto.html" data-nav="contacto">Contacto</a>
+    </nav>
+
+    <div class="nav-actions">
+      <span class="lang-switch" role="group" aria-label="Seleccionar idioma">
+        <a href="#" id="lang-es" aria-current="true">ES</a>
+        <a href="#" id="lang-en">EN</a>
+      </span>
+      <a href="/contacto.html?motivo=derivacion" class="btn btn-primary btn-sm">Realizar una derivación</a>
+      <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-mobile" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- El menú móvil vive fuera de <header> a propósito: header.site-nav usa
+     backdrop-filter, y eso convierte a header en el contenedor de referencia
+     para hijos position:fixed (deja de ser el viewport). Si nav-mobile queda
+     anidado ahí adentro, el menú se comprime a la altura del header en vez
+     de cubrir la pantalla. -->
+<nav id="nav-mobile" class="nav-mobile" aria-label="Navegación móvil">
+  <a href="/index.html" data-nav="inicio">Inicio</a>
+  <a href="/cardio-medicina.html" data-nav="cardio">Cardio Medicina</a>
+  <a href="/hemodinamia/index.html" data-nav="hemodinamia">Hemodinamia</a>
+  <a href="/dra-corina-biagioni.html" data-nav="dra">Dra. Corina Biagioni</a>
+  <a href="/pacientes/index.html" data-nav="pacientes">Pacientes</a>
+  <a href="/blog/index.html" data-nav="blog">Blog</a>
+  <a href="/contacto.html" data-nav="contacto">Contacto</a>
+  <a href="/contacto.html?motivo=derivacion" class="btn btn-primary btn-block mt-2">Realizar una derivación</a>
+</nav>

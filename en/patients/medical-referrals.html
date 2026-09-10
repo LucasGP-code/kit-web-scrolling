@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Medical Referrals | SAH — Servicio Austral de Hemodinamia</title>
+<meta name="description" content="How to refer a patient to SAH: referral circuit and form for referring physicians. Río Gallegos, Santa Cruz.">
+<link rel="canonical" href="https://sah.com.ar/en/patients/medical-referrals.html">
+<link rel="alternate" hreflang="es" href="https://sah.com.ar/pacientes/derivaciones-medicas.html">
+<link rel="alternate" hreflang="en" href="https://sah.com.ar/en/patients/medical-referrals.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/style.css">
+<style>
+  .page-hero { background: var(--bg-soft); padding: 8.5rem 0 3rem; }
+  .page-hero h1 { font-family:'Cormorant Garamond',serif; font-weight:800; font-size:clamp(1.9rem,3.4vw,2.6rem); color:var(--petrol-700); margin:1rem 0 .6rem; }
+  .steps { counter-reset: step; display: grid; gap: 1.2rem; margin: 2rem 0; }
+  .step { display: flex; gap: 1.1rem; align-items: flex-start; }
+  .step .num { counter-increment: step; flex-shrink:0; width:34px; height:34px; border-radius:50%; background:var(--gold); color:var(--navy-2); display:flex; align-items:center; justify-content:center; font-weight:700; font-size:.9rem; }
+  .step .num::before { content: counter(step); }
+  .step h3 { font-size: .98rem; color: var(--petrol-700); margin-bottom: .2rem; }
+  .step p { font-size: .88rem; color: var(--ink-soft); }
+  .form-card { max-width: 780px; margin: 0 auto; background: var(--navy-3); border: 1px solid var(--border); border-radius: var(--radius-l); padding: 2.4rem; box-shadow: var(--shadow-s); }
+  .form-section-title { font-size: .82rem; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; color: var(--teal-600); margin: 1.6rem 0 .8rem; }
+  .form-section-title:first-child { margin-top: 0; }
+</style>
+</head>
+<body data-nav="pacientes" data-lang="en" data-alt-href="/pacientes/derivaciones-medicas.html">
+<a href="#main" class="skip-link">Skip to main content</a>
+<div id="site-header"></div>
+
+<main id="main">
+  <section class="page-hero">
+    <div class="container">
+      <nav class="breadcrumbs" style="padding-top:0;margin-bottom:1.5rem;"><ol><li><a href="/en/index.html">Home</a></li><li><a href="/en/patients/index.html">Patients</a></li><li>Medical Referrals</li></ol></nav>
+      <span class="eyebrow">For referring physicians</span>
+      <h1>Medical referrals</h1>
+      <p class="sec-text">A clear circuit for referring patients to SAH, with follow-up at every stage.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container" style="max-width:780px;">
+      <div class="reveal">
+        <h2 class="sec-title" style="font-size:1.4rem;">How the circuit works</h2>
+        <div class="steps">
+          <div class="step"><span class="num"></span><div><h3>The physician submits the request and documentation</h3><p>Through the form on this page, attaching the medical order and any available prior studies.</p></div></div>
+          <div class="step"><span class="num"></span><div><h3>Evaluation by Dr. Corina Biagioni</h3><p>The information received is reviewed to determine the indicated procedure.</p></div></div>
+          <div class="step"><span class="num"></span><div><h3>Appointment scheduling with the clinic</h3><p>Date and time coordination is handled together with the corresponding clinic. This site does not grant appointments directly.</p></div></div>
+          <div class="step"><span class="num"></span><div><h3>Our staff confirms the date and instructions to the patient</h3><p>The patient is contacted with the confirmed date and preparation instructions.</p></div></div>
+          <div class="step"><span class="num"></span><div><h3>Feedback to the referring physician</h3><p>When applicable, the referring physician is informed.</p></div></div>
+        </div>
+        <div class="notice reveal">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="flex-shrink:0;"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
+          <span>Filling out this form does not assign or confirm an appointment. Final date and time scheduling is coordinated with the corresponding clinic.</span>
+        </div>
+      </div>
+
+      <div class="form-card reveal mt-3">
+        <h2 class="sec-title" style="font-size:1.3rem;">Referral form</h2>
+        <p class="sec-text mb-2">Fields marked with <span class="required">*</span> are required.</p>
+
+        <form data-sah-form novalidate>
+          <!-- Antispam: hidden field, invisible to people -->
+          <div style="position:absolute;left:-9999px;" aria-hidden="true">
+            <label for="empresa_web">Do not fill out this field</label>
+            <input type="text" id="empresa_web" name="empresa_web" tabindex="-1" autocomplete="off">
+          </div>
+
+          <p class="form-section-title">Patient information</p>
+          <div class="form-grid">
+            <div class="form-field full"><label for="pac_nombre">Patient's full name <span class="required">*</span></label><input type="text" id="pac_nombre" name="pac_nombre" required autocomplete="name"></div>
+            <div class="form-field"><label for="pac_dni">ID number <span class="required">*</span></label><input type="text" id="pac_dni" name="pac_dni" required></div>
+            <div class="form-field"><label for="pac_nac">Date of birth <span class="required">*</span></label><input type="date" id="pac_nac" name="pac_nac" required></div>
+            <div class="form-field"><label for="pac_tel">Phone <span class="required">*</span></label><input type="tel" id="pac_tel" name="pac_tel" required autocomplete="tel"></div>
+            <div class="form-field"><label for="pac_email">Email</label><input type="email" id="pac_email" name="pac_email" autocomplete="email"></div>
+            <div class="form-field"><label for="pac_localidad">City / Town <span class="required">*</span></label><input type="text" id="pac_localidad" name="pac_localidad" required></div>
+            <div class="form-field full"><label for="pac_cobertura">Health insurance / coverage</label><input type="text" id="pac_cobertura" name="pac_cobertura"></div>
+          </div>
+
+          <p class="form-section-title">Referring physician's information</p>
+          <div class="form-grid">
+            <div class="form-field full"><label for="med_nombre">Physician's full name <span class="required">*</span></label><input type="text" id="med_nombre" name="med_nombre" required></div>
+            <div class="form-field"><label for="med_mp">Medical license number <span class="required">*</span></label><input type="text" id="med_mp" name="med_mp" required></div>
+            <div class="form-field"><label for="med_tel">Physician's phone <span class="required">*</span></label><input type="tel" id="med_tel" name="med_tel" required></div>
+            <div class="form-field full"><label for="med_email">Physician's email <span class="required">*</span></label><input type="email" id="med_email" name="med_email" required></div>
+          </div>
+
+          <p class="form-section-title">Reason for the referral</p>
+          <div class="form-grid">
+            <div class="form-field full"><label for="motivo">Reason for the referral <span class="required">*</span></label>
+              <textarea id="motivo" name="motivo_texto" rows="3" required></textarea>
+            </div>
+            <div class="form-field"><label for="prioridad">Priority level <span class="required">*</span></label>
+              <select id="prioridad" name="prioridad" required>
+                <option value="">Select an option</option>
+                <option value="programada">Scheduled</option>
+                <option value="prioritaria">Priority</option>
+                <option value="urgente">Urgent</option>
+              </select>
+            </div>
+            <div class="form-field"><label for="orden_medica">Medical order</label>
+              <input type="file" id="orden_medica" name="orden_medica" accept=".pdf,.jpg,.jpeg,.png">
+              <span class="form-hint">Accepted formats: PDF, JPG or PNG.</span>
+            </div>
+            <div class="form-field"><label for="estudios_previos">Prior studies</label>
+              <input type="file" id="estudios_previos" name="estudios_previos" accept=".pdf,.jpg,.jpeg,.png" multiple>
+              <span class="form-hint">You can attach more than one file.</span>
+            </div>
+            <div class="form-field full"><label for="observaciones">Notes</label><textarea id="observaciones" name="observaciones" rows="3"></textarea></div>
+          </div>
+
+          <label class="form-checkbox mt-2">
+            <input type="checkbox" name="consentimiento" required>
+            <span>I give my consent for the processing of the personal and health data included in this form, in accordance with SAH's <a href="/en/legal/health-data-processing.html" style="color:var(--petrol-500);">Health Data Processing Policy</a>. <span class="required">*</span></span>
+          </label>
+
+          <button type="submit" class="btn btn-primary btn-block mt-2">Submit referral request</button>
+          <div class="form-status" role="status" aria-live="polite"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div id="site-footer"></div>
+<script src="/assets/js/site.js" defer></script>
+</body>
+</html>
