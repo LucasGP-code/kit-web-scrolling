@@ -21,8 +21,8 @@
     /* Los partials de header/footer también están traducidos: las páginas
        en inglés (data-lang="en") cargan la versión de /en/partials/. */
     var lang = document.body.getAttribute("data-lang") || "es";
-    var headerUrl = lang === "en" ? "/en/partials/header.html" : "/partials/header.html";
-    var footerUrl = lang === "en" ? "/en/partials/footer.html" : "/partials/footer.html";
+    var headerUrl = lang === "en" ? "/kit-web-scrolling/en/partials/header.html" : "/kit-web-scrolling/partials/header.html";
+    var footerUrl = lang === "en" ? "/kit-web-scrolling/en/partials/footer.html" : "/kit-web-scrolling/partials/footer.html";
     loadPartial("#site-header", headerUrl, initHeader);
     loadPartial("#site-footer", footerUrl, initFooter);
     initReveal();
@@ -72,12 +72,12 @@
       if (lang === "en") {
         enLink.setAttribute("aria-current", "true");
         esLink.removeAttribute("aria-current");
-        esLink.href = altHref || "/index.html";
+        esLink.href = altHref || "/kit-web-scrolling/index.html";
         enLink.href = "#";
       } else {
         esLink.setAttribute("aria-current", "true");
         enLink.removeAttribute("aria-current");
-        enLink.href = altHref || "/en/index.html";
+        enLink.href = altHref || "/kit-web-scrolling/en/index.html";
         esLink.href = "#";
       }
     }
