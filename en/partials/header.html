@@ -1,0 +1,47 @@
+<header class="site-nav" id="site-nav">
+  <div class="nav-row">
+    <a href="/kit-web-scrolling/en/index.html" class="nav-logo" aria-label="SAH — Servicio Austral de Hemodinamia, go to homepage">
+      <img src="/kit-web-scrolling/assets/Logo%20SAH.png" alt="SAH logo" />
+      <span>
+        <span class="nav-brand-name">SAH</span>
+      </span>
+    </a>
+
+    <nav aria-label="Main navigation" class="nav-links">
+      <a href="/kit-web-scrolling/en/index.html" data-nav="inicio">Home</a>
+      <a href="/kit-web-scrolling/en/cardio-medicine.html" data-nav="cardio">Cardio Medicine</a>
+      <a href="/kit-web-scrolling/en/interventional-cardiology/index.html" data-nav="hemodinamia">Interventional Cardiology</a>
+      <a href="/kit-web-scrolling/en/dr-corina-biagioni.html" data-nav="dra">Dr. Biagioni</a>
+      <a href="/kit-web-scrolling/en/patients/index.html" data-nav="pacientes">Patients</a>
+      <a href="/kit-web-scrolling/en/blog/index.html" data-nav="blog">Blog</a>
+      <a href="/kit-web-scrolling/en/contact.html" data-nav="contacto">Contact</a>
+    </nav>
+
+    <div class="nav-actions">
+      <a href="/kit-web-scrolling/en/contact.html?motivo=referral" class="btn btn-primary btn-sm">Referrals</a>
+      <span class="lang-switch" role="group" aria-label="Select language">
+        <a href="#" id="lang-es">ES</a>
+        <a href="#" id="lang-en" aria-current="true">EN</a>
+      </span>
+      <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-mobile" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile menu lives outside <header> on purpose: header.site-nav uses
+     backdrop-filter, which makes header the containing block for
+     position:fixed children (instead of the viewport). If nav-mobile stays
+     nested in there, the menu gets squeezed to the header's height instead
+     of covering the screen. -->
+<nav id="nav-mobile" class="nav-mobile" aria-label="Mobile navigation">
+  <a href="/kit-web-scrolling/en/index.html" data-nav="inicio">Home</a>
+  <a href="/kit-web-scrolling/en/cardio-medicine.html" data-nav="cardio">Cardio Medicine</a>
+  <a href="/kit-web-scrolling/en/interventional-cardiology/index.html" data-nav="hemodinamia">Interventional Cardiology</a>
+  <a href="/kit-web-scrolling/en/dr-corina-biagioni.html" data-nav="dra">Dr. Corina Biagioni</a>
+  <a href="/kit-web-scrolling/en/patients/index.html" data-nav="pacientes">Patients</a>
+  <a href="/kit-web-scrolling/en/blog/index.html" data-nav="blog">Blog</a>
+  <a href="/kit-web-scrolling/en/contact.html" data-nav="contacto">Contact</a>
+  <a href="/kit-web-scrolling/en/contact.html?motivo=derivacion" class="btn btn-primary btn-block mt-2">Make a Referral</a>
+</nav>

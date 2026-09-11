@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sah.com.ar/sitemap.xml
